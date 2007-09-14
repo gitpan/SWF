@@ -1,0 +1,88 @@
+0.4.0.beta4 - ????
+
+	* Fix handling of the special 'undefined' value.
+	* Fix 'delete' syntax in action compiler.
+	* makeswf now handles bitmaps.
+	* Many improvements in decompiler.
+	* Build scripts cleanup (including check rule).
+	* Add support for 'extends' and proper 'push' asm opcodes in
+	  ActionScript compiler.
+	* Generate DefineFunction2 when target version > 6.
+	* Use GOTOFRAME, GOTOFRAME2 and GOTOLABEL when using gotoAndPlay()
+	  or gotoAndStop() w/out an object.
+	* Video updates: added Flash8 codecs, generic flv parser
+	* Soundstream: accept flv audio streams (mp3 only for now)
+	* Flash 8: PlaceObject3
+	* Flash 8: Filter and Blendmode
+	* Write proper Flash 8 files
+	* Added movie control tags: FileAttributes, Metadata, 
+	  ScriptLimits, ImportAssets2, SetTabIndex
+	* Flash 8: ScalingGrid
+	* Parser / listswf updates
+	* PHP / Perl bindings update
+	* Flash 8: DefineShape4 / Linestyle2
+	* SWFAction cleanup and API cleanup
+	* SWF_warnOnce()
+
+0.4.0.beta3 - 2006-12-10
+
+	* Fix version to not use dashes to make rpmbuild happy
+	* autotool tcl extension
+	* coalesce multiple ming.i files into a single file at the top
+	* swig output updated for python & tcl
+	* Misc decompiler fixes
+	* makeswf now handles precompiled clips
+	* Make sure the extension source show up in the dist tarballs
+	* compiler fix for asm {} blocks
+
+0.4.0-beta2 - 2006-11-21
+
+	* Preliminary support for building RPM packages
+	* New PHP code that builds for PHP$ and PHP5
+	* Added missing SWFMovieClip class in PHP
+	* New tool, ttftofft, for producing ming formast fonts
+	* Allow output of SWF version 8 
+	* Better SWF parser (utilities).
+	* NEW function: SWFMovie_protectWithPassword()
+	* preprocessor products of 'makeswf' are now named after
+	  output filename and frame# (ie: "out.swf.frame0.pp")
+	* Automake-based build, for portability's sake (libtool)
+	* Ming_setWarnFunction and Ming_setErrorFunction now return
+	  the previously-set value.
+	* More documentation !
+	* Start of a test suite!
+	* makeswf now provides an __SWF_VERSION__ macro for use
+	  in cross-version ActionScript code.
+	* NEW functions: SWFDisplayItem_getMatrix(),
+	  SWFPosition_getMatrix(), SWFMatrix_getScaleX(),
+	  SWFMatrix_getRotate0(), SWFMatrix_getRotate1(),
+	  SWFMatrix_getScaleY(), SWFMatrix_getTranslateX(),
+	  SWFMatrix_getTranslateY(), SWFShape_moveScaledPenTo().
+
+0.3.1 - ?
+
+	* Fixed libpng-less builds
+	* Fixed default error handler to exit with a FAILURE code
+
+0.3.0 - 2006-02-15
+
+	* Fixed bug in empty case: statements
+	* Updated ch language bindings
+
+0.3beta2 - 2006-01-30
+
+        * C# support
+        * Garbage collection support
+        * C++ / PHP / Java extensions fixes
+        * Autotools / configure support
+	* New SWFPrebuiltClip class - include external SWFs as MovieClips
+	* Command line actionscript compiler
+	* Decompiler redesign
+        * Fixes and cleanups all over the place
+	* Case-sensitive actionscript compiler
+	* Language bindings are now split out into seperate tarballs
+	* New utils based on common code and new parsing framework
+
+0.3beta1 - 2004-02-02
+
+0.2a - ???
