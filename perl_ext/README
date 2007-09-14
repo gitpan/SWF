@@ -1,5 +1,9 @@
 SWF.pm -- A perl interface for creating SWF files.
 
+README is outdated; installation steps must be reviewed, because build chain 
+of ming core itself changed (use of autotools)
+
+
 ABSTRACT:
 ---------
 

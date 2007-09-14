@@ -68,11 +68,9 @@ ask_ming_dir() unless ($MING_DIR);
 
 
 print "\nUsing ming version $ming_version in the ". abs_path($MING_DIR) ." directory.\n\n";
-
-# autocompile for cpan 
-compile() unless ming_is_compiled();
-#print "ming library isn't compiled, it is needed for the perl module\n" unless ming_is_compiled();
-
+print '# activate again for cpan?';
+print '#compile() unless ming_is_compiled();'."\n";
+print "ming library isn't compiled, it is needed for the perl module\n" unless ming_is_compiled();
 # 2006/01/24 (peterdd) now we can look into ming_config.h to get some info.
 my $libs=get_mingconfig($MING_DIR."/src/ming_config.h");
 write_swf_h($MING_DIR."/src/");
