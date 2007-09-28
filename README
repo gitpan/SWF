@@ -1,37 +1,61 @@
+SWF.pm -- A perl interface for creating SWF files.
 
-MING THE MODULE
+ABSTRACT:
+---------
 
-Last updated 19th April 2006.
+This is an auto-loadable interface module for Ming - a library for generating 
+SWF ("Flash") format movies.
 
-Ming is a Flash (SWF) output library.  It can be used from PHP, Perl,
-Ruby, Python, C, C++, Java, and probably more on the way.
+With this library you can create Flash movies on the fly with Perl.
 
-It comprises a lot of Flash functionality, including features of Flash 6.
 
-Specifically, it lets you create: shapes (including morphs), text, sprites
-(aka movie clips), buttons, and actions in flash movies, plus more.
+INSTALLATION:
+-------------
 
-The goal for Ming is to abstract away all of the mundane specifics of the
-SWF file format.
+Read these instructions all the way through before you start!
 
-Ming also includes a PHP wrapper which wraps Ming objects in PHP objects.
-Pretty cool.
+1.  Make sure you have downloaded Ming ( http://sourceforge.net/projects/ming ). If
+    you haven't compiled Ming, it will be compiled during SWF.pm installation
+    process (step 3 below).
 
-The Python wrapper has been updated to mirror the functionality of the PHP
-interface, so you should be able to use the PHP documentation without
-getting terribly confused now.
+2.  Unpack the tar file. (If you are reading this you have probably done this. :-))
+    Under Unix type:
 
-There's a Perl wrapper now, feedback about it (and enhancements) are most
-welcome.
+    tar xvzf ming-perl-XXX.tar.gz
 
-The C++ wrapper is just one big header file.  But it seems to work pretty
-well.  Check the examples directory.
+3.  Compile:
 
-Ming is released under the LGPL. See file LICENSE for the gory details.
-The command-line actionscript compiler is released under the GPL. See
-file LICENSE_GPL2 for details.
+	a.  cd ming-perl-XXX/perl-ext
+	b.  perl Makefile.PL
+		If you want to install SWF into your home directory, replace type:
+        	
+		perl Makefile.PL PREFIX=~/
+		
+		instead
+	c.  make
+	d.  make test 
+		optional but recommended
+	e.  make install
 
-For installation instructions, see the INSTALL.txt file.
+	# deactivated currently:
+	#During step (b), Makefile.PL will try to find your Ming distribution. 
+	#If it fails, you will be asked to provide the Ming directory.
 
-The Ming Development Team
-http://ming.sf.net
+
+4.  There are a few cgi demos in the examples directory. For more see the testcases of ming:
+	$MINGDIR/test
+
+5.  After install there is too some (still incomplete) documentation accessible by manpages.
+	E.g. type 
+		man SWF
+		or
+		man SWF::Shape 
+
+		Hint: The KDE file and web browser Konqueror formats manpages automatic as nice HTML-files.
+	
+	Further documentation you can find here:
+		the doc/ dir of ming distribution.
+		http://sourceforge.net/projects/ming
+		http://ming.sf.net       (outdated homepage, need to be fixed)
+		http://www.libming.org   (new wiki, but still lacks content)
+		http://www.gazbming.com  (many simple examples)
