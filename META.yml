@@ -1,7 +1,7 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         SWF
-version:      0.4.0-beta6_1
+version:      0.4.0-beta6_02
 version_from: ./SWF.pm
 installdirs:  site
 requires:

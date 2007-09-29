@@ -4,8 +4,8 @@
 # it under the same terms as Perl itself.
 # ====================================================================
 
-# $Author: soheil $
-# $Id: DisplayItem.pm,v 1.5 2002/09/24 03:00:24 soheil Exp $
+# $Author: peterdd $
+# $Id: DisplayItem.pm,v 1.6 2007/09/29 08:08:15 peterdd Exp $
 
 package SWF::DisplayItem;
 use SWF ();
@@ -28,7 +28,14 @@ SWF::DisplayItem - SWF DisplayItem class
 
 =head1 DESCRIPTION
 
-SWF::DisplayItem is used for animation. To create an SWF::DisplayItem object, you may use either L<SWF::Movie/"add"> or L<SWF::Sprite/"add"> method.
+When you place an SWF object (one of the types that can be seen with eyes by user) 
+in a frame of a SWF::Movie or SWF::movieClip, the return value will be
+in a SWF::DisplayItem.
+
+You can now modify that item in current and every following frames of the clip where you added the SWF object.
+
+Further it is accessible by ActionScript too. 
+Just give the DisplayItem a name with method setName($name) after you added the SWF object to a SWF::Movie or SWF::MovieClip
 
 
 =head1 METHODS
@@ -125,10 +132,11 @@ Returns Z-order of $displayItem.
 
 =head1 AUTHOR
 
-Soheil Seyfaie (soheil AT users.sourceforge.net).
+Soheil Seyfaie (soheil AT users.sourceforge.net)
+Peter Liscovius
 
 =head1 SEE ALSO
 
-SWF, SWF::Button, SWF::Shape, SWF::Movie, .
+SWF, SWF::Button, SWF::Movie, SWF::MovieClip, SWF::Shape, SWF::Text, SWF::TextField
 
 =cut

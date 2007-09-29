@@ -4,7 +4,7 @@
 # it under the same terms as Perl itself.
 # ====================================================================
 
-# $Id: SWF.pm,v 1.9 2006/04/05 16:46:41 vapour Exp $
+# $Id: SWF.pm,v 1.11 2007/09/29 08:08:14 peterdd Exp $
 
 package SWF;
 use strict;
@@ -13,9 +13,9 @@ use Carp 'croak';
 require DynaLoader;
 @SWF::ISA = qw(DynaLoader);
 
-$SWF::VERSION = '0.4.0-beta6_1';
+$SWF::VERSION = '0.4.0-beta6_02';
 
-my @EXPORT_OK = qw(Action Bitmap Button Constants DisplayItem Fill Font Gradient Morph Movie Shape Sound Sprite Text TextField);
+my @EXPORT_OK = qw(Action Bitmap Button Constants DisplayItem Fill Font Gradient Morph Movie MovieClip PrebuiltClip Shape Sound Text TextField);
 
 bootstrap SWF $SWF::VERSION;
 
@@ -50,8 +50,8 @@ __END__
 
 =head1 NAME
 
-SWF - an autoloadable interface module for Ming - a library for generating 
-SWF ("Flash") format movies.
+SWF: an autoloadable interface module for Ming - a library for generating 
+ShockWave Flash format movies.
 
 =head1 SYNOPSIS
 
@@ -113,7 +113,12 @@ Soheil Seyfaie (soheil at users.sourceforge.net).
 
 =head1 SEE ALSO
 
-SWF, SWF::Action, SWF::Bitmap, SWF::Button, SWF::Constants, SWF::DisplayItem, SWF::Fill, SWF::Font, SWF::Gradient, SWF::Morph, SWF::Movie, SWF::Shape, 
-SWF::Sound, SWF::Sprite, SWF::TextField, SWF::Text, SWF::VideoStream
+SWF.pm related modules: 
+SWF::Action, SWF::Bitmap, SWF::Button, SWF::Constants, SWF::DisplayItem, SWF::Fill, SWF::Font, 
+SWF::Gradient, SWF::Morph, SWF::Movie, SWF::MovieClip, SWF::PrebuiltClip, 
+SWF::Shape, SWF::Sound, SWF::TextField, SWF::Text, SWF::VideoStream
+
+other projects:
+SWF::Builder  - a pure perl alternative to Ming
 
 =cut

@@ -40,7 +40,6 @@ destroySWFButton(button)
 	swf_stash_refcnt_dec((SV*)SvRV(ST(0)));
         destroySWFButton(button);
 
-
 void
 SWFButton_addShape(button, character, flags=0)
 	SWF::Button	button

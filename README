@@ -27,35 +27,45 @@ Read these instructions all the way through before you start!
 
 	a.  cd ming-perl-XXX/perl-ext
 	b.  perl Makefile.PL
-		If you want to install SWF into your home directory, replace type:
-        	
-		perl Makefile.PL PREFIX=~/
-		
-		instead
 	c.  make
-	d.  make test 
-		optional but recommended
+	d.  make test (optional but recommended)
 	e.  make install
 
-	# deactivated currently:
-	#During step (b), Makefile.PL will try to find your Ming distribution. 
-	#If it fails, you will be asked to provide the Ming directory.
+	During step (b), Makefile.PL will try to find your Ming distribution. 
+	If it fails, you will be asked to provide the Ming directory.
 
+	If you want to install SWF into your home directory, replace step (b)
+	with:
 
-4.  There are a few cgi demos in the examples directory. For more see the testcases of ming:
-	$MINGDIR/test
+	b. perl Makefile.PL PREFIX=/path/to/your/directory
+
+4.  There are some cgi demos in the examples directory. THE EXAMPLES ARE NOT
+    PERLIASH (you can write it more succinctly in Perl). These examples were
+    created from PHP examples in the Ming distribution.
 
 5.  After install there is too some (still incomplete) documentation accessible by manpages.
-	E.g. type 
+    E.g. type 
+		
 		man SWF
 		or
 		man SWF::Shape 
 
 		Hint: The KDE file and web browser Konqueror formats manpages automatic as nice HTML-files.
-	
-	Further documentation you can find here:
-		the doc/ dir of ming distribution.
-		http://sourceforge.net/projects/ming
-		http://ming.sf.net       (outdated homepage, need to be fixed)
-		http://www.libming.org   (new wiki, but still lacks content)
-		http://www.gazbming.com  (many simple examples)
+
+COPYRIGHT INFO
+--------------
+
+ Copyright (c) 2000-2003 by Soheil Seyfaie. All rights reserved.
+ This program is free software; you can redistribute it and/or modify it
+ under the same terms as Perl itself.
+
+
+
+AUTHOR:
+_______
+
+Soheil Seyfaie
+soheil at users.sourceforge.net
+
+and many others 
+(see http://sourceforge.net/projects/ming/ )

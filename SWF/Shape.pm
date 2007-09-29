@@ -4,7 +4,7 @@
 # it under the same terms as Perl itself.
 # ====================================================================
 
-# $Id: Shape.pm,v 1.4 2003/02/01 18:30:19 soheil Exp $
+# $Id: Shape.pm,v 1.5 2007/09/29 08:08:15 peterdd Exp $
 
 package SWF::Shape;
 use SWF ();
@@ -164,6 +164,7 @@ Soheil Seyfaie (soheil at users.sourceforge.net).
 
 =head1 SEE ALSO
 
-SWF, SWF::Action, SWF::Bitmap, SWF::Button, SWF::Constants, SWF::DisplayItem, SWF::Fill, SWF::Font, SWF::Gradient, SWF::Morph, SWF::Movie, SWF::Shape, SWF::Sound, SWF::Sprite, SWF::TextField, SWF::Text
+SWF, SWF::Action, SWF::Bitmap, SWF::Button, SWF::Constants, SWF::DisplayItem, SWF::Fill, SWF::Font, SWF::Gradient, SWF::Morph, SWF::Movie, SWF::MovieClip,SWF::Shape, 
+SWF::Sound, SWF::TextField, SWF::Text
 
 =cut

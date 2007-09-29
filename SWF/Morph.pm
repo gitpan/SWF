@@ -4,8 +4,8 @@
 # it under the same terms as Perl itself.
 # ====================================================================
 
-# $Author: soheil $
-# $Id: Morph.pm,v 1.2 2001/09/24 00:58:11 soheil Exp $
+# $Author: peterdd $
+# $Id: Morph.pm,v 1.3 2007/09/29 08:08:15 peterdd Exp $
 
 package SWF::Morph;
 use SWF ();
@@ -64,6 +64,6 @@ Soheil Seyfaie (soheil@netcom.ca).
 
 =head1 SEE ALSO
 
-SWF, SWF::Button, SWF::DisplayItem, SWF::Shape, SWF::Sprite, SWF::Movie, .
+SWF, SWF::Button, SWF::DisplayItem, SWF::Shape,  SWF::Movie, SWF::MovieClip
 
 =cut
